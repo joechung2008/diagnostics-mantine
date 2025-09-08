@@ -1,8 +1,8 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@mantine/core": "^8.2.8",
-    "@mantine/hooks": "^8.2.8",
+    "@mantine/core": "^8.3.0",
+    "@mantine/hooks": "^8.3.0",
     "@tabler/icons-react": "^3.34.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -30,8 +30,8 @@
     "postcss-preset-mantine": "^1.18.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.42.0",
-    "vite": "^7.1.4",
+    "typescript-eslint": "^8.43.0",
+    "vite": "^7.1.5",
     "vitest": "^3.2.4"
   },
   "name": "diagnostics-mantine",

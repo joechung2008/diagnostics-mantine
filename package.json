@@ -1,8 +1,8 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@mantine/core": "^8.3.0",
-    "@mantine/hooks": "^8.3.0",
+    "@mantine/core": "^8.3.1",
+    "@mantine/hooks": "^8.3.1",
     "@tabler/icons-react": "^3.34.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

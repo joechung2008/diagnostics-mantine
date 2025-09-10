@@ -161,13 +161,19 @@ const App: React.FC = () => {
         onChange={(value) => value && setSelectedTab(value)}
       >
         <TabsList>
-          <TabsTab value="extensions">Extensions</TabsTab>
-          <TabsTab value="build">Build Information</TabsTab>
-          <TabsTab value="server">Server Information</TabsTab>
+          <TabsTab aria-controls="extensions-tab" value="extensions">
+            Extensions
+          </TabsTab>
+          <TabsTab aria-controls="build-tab" value="build">
+            Build Information
+          </TabsTab>
+          <TabsTab aria-controls="server-tab" value="server">
+            Server Information
+          </TabsTab>
         </TabsList>
       </Tabs>
       {selectedTab === "extensions" && (
-        <div className="tab-panel">
+        <div id="extensions-tab" className="tab-panel">
           <div className="stack">
             <Extensions extensions={extensions} onLinkClick={handleLinkClick} />
             {extension && <Extension {...extension} />}
@@ -175,12 +181,12 @@ const App: React.FC = () => {
         </div>
       )}
       {selectedTab === "build" && (
-        <div className="tab-panel">
+        <div id="build-tab" className="tab-panel">
           <BuildInfo {...buildInfo} />
         </div>
       )}
       {selectedTab === "server" && (
-        <div className="tab-panel">
+        <div id="server-tab" className="tab-panel">
           <ServerInfo {...serverInfo} />
         </div>
       )}
